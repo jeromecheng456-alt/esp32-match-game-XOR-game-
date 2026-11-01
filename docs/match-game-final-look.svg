@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" width="1200" height="1000" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <radialGradient id="gGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#eaffea"/>
+      <stop offset="45%" stop-color="#3ddc6a"/>
+      <stop offset="100%" stop-color="#3ddc6a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffecec"/>
+      <stop offset="45%" stop-color="#ff4d4d"/>
+      <stop offset="100%" stop-color="#ff4d4d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ball" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cfeed8"/>
+    </radialGradient>
+    <linearGradient id="jar" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f4fbff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#d7eefc" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1000" fill="#eef2f7"/>
+
+  <text x="40" y="60" font-size="38" font-weight="700" fill="#14213d">Match Game: how it will look</text>
+  <text x="40" y="92" font-size="18" fill="#41506b">Two player boxes, one result box, result shown as a green or red glow. Green = same pick, red = different.</text>
+
+  <!-- SCENE -->
+  <rect x="30" y="115" width="1140" height="400" rx="22" fill="#dfe7f1"/>
+  <text x="55" y="150" font-size="22" font-weight="700" fill="#14213d">Final look (Option A shown: ping-pong ball)</text>
+
+  <rect x="80" y="280" width="260" height="170" rx="16" fill="#1a1f2b"/>
+  <circle cx="150" cy="350" r="34" fill="#f2f2f2" stroke="#9aa5b8" stroke-width="5"/>
+  <circle cx="270" cy="350" r="34" fill="#f2f2f2" stroke="#9aa5b8" stroke-width="5"/>
+  <text x="150" y="362" font-size="34" font-weight="700" fill="#1a1f2b" text-anchor="middle">1</text>
+  <text x="270" y="362" font-size="34" font-weight="700" fill="#1a1f2b" text-anchor="middle">2</text>
+  <text x="210" y="425" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Player A</text>
+
+  <rect x="860" y="280" width="260" height="170" rx="16" fill="#1a1f2b"/>
+  <circle cx="930" cy="350" r="34" fill="#f2f2f2" stroke="#9aa5b8" stroke-width="5"/>
+  <circle cx="1050" cy="350" r="34" fill="#f2f2f2" stroke="#9aa5b8" stroke-width="5"/>
+  <text x="930" y="362" font-size="34" font-weight="700" fill="#1a1f2b" text-anchor="middle">1</text>
+  <text x="1050" y="362" font-size="34" font-weight="700" fill="#1a1f2b" text-anchor="middle">2</text>
+  <text x="990" y="425" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Player B</text>
+
+  <path d="M340 400 L 470 400" stroke="#6b7a90" stroke-width="8" fill="none"/>
+  <path d="M730 400 L 860 400" stroke="#6b7a90" stroke-width="8" fill="none"/>
+  <text x="405" y="388" font-size="15" fill="#41506b" text-anchor="middle">3-wire cable</text>
+  <text x="795" y="388" font-size="15" fill="#41506b" text-anchor="middle">3-wire cable</text>
+
+  <rect x="470" y="340" width="260" height="130" rx="16" fill="#1a1f2b"/>
+  <text x="600" y="440" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Result box (ESP32 inside)</text>
+  <circle cx="600" cy="262" r="120" fill="url(#gGlow)"/>
+  <circle cx="600" cy="272" r="66" fill="url(#ball)" stroke="#bfe3cb" stroke-width="3"/>
+  <circle cx="600" cy="272" r="40" fill="#7dffa0" opacity="0.55"/>
+  <rect x="582" y="332" width="36" height="10" rx="3" fill="#1a1f2b"/>
+  <text x="600" y="150" font-size="17" font-weight="700" fill="#14213d" text-anchor="middle" opacity="0">.</text>
+  <text x="860" y="150" font-size="17" font-weight="700" fill="#14213d" text-anchor="middle">Ball glows green or red</text>
+  <text x="600" y="492" font-size="15" fill="#41506b" text-anchor="middle">USB cable to 5V phone charger</text>
+
+  <!-- OPTION A -->
+  <rect x="30" y="540" width="560" height="420" rx="22" fill="#ffffff"/>
+  <text x="55" y="578" font-size="24" font-weight="700" fill="#14213d">Option A: ping-pong ball on the box</text>
+
+  <circle cx="190" cy="720" r="90" fill="#f4fff7" stroke="#8fc9a2" stroke-width="3"/>
+  <circle cx="190" cy="720" r="70" fill="url(#gGlow)"/>
+  <path d="M150 745 q 0 -55 40 -55 q 40 0 40 55 q 0 15 -20 15 q -20 0 -20 -20 q 0 -25 -10 -25" stroke="#3b82f6" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <rect x="140" y="812" width="100" height="26" rx="4" fill="#1a1f2b"/>
+  <text x="190" y="830" font-size="13" fill="#ffffff" text-anchor="middle">box lid</text>
+  <line x1="190" y1="765" x2="190" y2="812" stroke="#6b7a90" stroke-width="6"/>
+  <text x="190" y="868" font-size="14" fill="#41506b" text-anchor="middle">cut-away</text>
+
+  <text x="330" y="650" font-size="16" font-weight="700" fill="#14213d">How it is built</text>
+  <text x="330" y="680" font-size="15" fill="#41506b">1. 8 LEDs of the strip coiled</text>
+  <text x="345" y="700" font-size="15" fill="#41506b">inside a 40 mm ball</text>
+  <text x="330" y="730" font-size="15" fill="#41506b">2. Small slot in the ball and</text>
+  <text x="345" y="750" font-size="15" fill="#41506b">lid for the 3 strip wires</text>
+  <text x="330" y="780" font-size="15" fill="#41506b">3. Rest of the strip coiled</text>
+  <text x="345" y="800" font-size="15" fill="#41506b">inside the box, LEDs past</text>
+  <text x="345" y="820" font-size="15" fill="#41506b">number 8 stay off</text>
+  <text x="55" y="905" font-size="15" font-weight="700" fill="#1f8a4c">+ Compact, one unit, looks neat</text>
+  <text x="55" y="930" font-size="15" font-weight="700" fill="#b42318">- Tight fit. Test the strip in the ball first</text>
+
+  <!-- OPTION B -->
+  <rect x="610" y="540" width="560" height="420" rx="22" fill="#ffffff"/>
+  <text x="635" y="578" font-size="24" font-weight="700" fill="#14213d">Option B: frosted jar beside the box</text>
+
+  <rect x="650" y="650" width="150" height="190" rx="22" fill="url(#jar)" stroke="#9cc7e0" stroke-width="3"/>
+  <rect x="660" y="628" width="130" height="26" rx="6" fill="#9aa5b8"/>
+  <ellipse cx="725" cy="750" rx="75" ry="70" fill="url(#rGlow)"/>
+  <path d="M690 785 q 0 -60 35 -60 q 35 0 35 60 q 0 15 -18 15 q -17 0 -17 -18 q 0 -22 -10 -22" stroke="#3b82f6" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M725 840 C 725 880, 800 885, 850 885" stroke="#6b7a90" stroke-width="6" fill="none"/>
+  <rect x="850" y="855" width="110" height="60" rx="10" fill="#1a1f2b"/>
+  <text x="905" y="890" font-size="14" fill="#ffffff" text-anchor="middle">Result box</text>
+
+  <text x="995" y="650" font-size="16" font-weight="700" fill="#14213d">How it is built</text>
+  <text x="995" y="680" font-size="15" fill="#41506b">1. Strip (8 LEDs)</text>
+  <text x="1010" y="700" font-size="15" fill="#41506b">coiled in the jar</text>
+  <text x="995" y="730" font-size="15" fill="#41506b">2. 3-wire lead to</text>
+  <text x="1010" y="750" font-size="15" fill="#41506b">the result box</text>
+  <text x="995" y="780" font-size="15" fill="#41506b">3. Glow is bigger</text>
+  <text x="1010" y="800" font-size="15" fill="#41506b">and softer</text>
+  <text x="635" y="905" font-size="15" font-weight="700" fill="#1f8a4c" opacity="0">.</text>
+  <text x="995" y="905" font-size="15" font-weight="700" fill="#1f8a4c">+ Easy fit</text>
+  <text x="995" y="930" font-size="15" font-weight="700" fill="#b42318">- Loose extra piece</text>
+
+  <text x="40" y="985" font-size="14" fill="#41506b">Rough concept, not to scale. Pure green or pure red only, never white. Pins and limits are in the plan note.</text>
+</svg>
